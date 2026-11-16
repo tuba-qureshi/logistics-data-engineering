@@ -117,6 +117,24 @@ linkedin.com/in/tuba-qureshi
 
 ![Gold Equipment](screenshots/gold-equipment.png)
 
+## 🏗️ Project Architecture
+
+This project follows the Medallion Architecture using Microsoft Fabric.
+
+```mermaid
+flowchart TD
+    A["Source CSV Files<br/>Account.csv<br/>Equipment.csv"]
+    B["Bronze Lakehouse<br/>Raw Data"]
+    C["Silver Lakehouse<br/>Cleaned & Transformed Data"]
+    D["Gold Lakehouse<br/>Business-Ready Data"]
+    E["DIM_ACCOUNT_DETAILS"]
+    F["FACT_EQUIPMENT"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
 
 ## 🔄 Project Workflow
 
