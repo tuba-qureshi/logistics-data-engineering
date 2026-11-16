@@ -11,31 +11,32 @@ This project demonstrates an end-to-end logistics data engineering workflow usin
 - Prepare structured dimension and fact tables in the Gold layer.
 - Organize data processing through Microsoft Fabric notebooks and pipelines.
 
-🏗️ Architecture
+🏗️ Project Architecture
 
 The project follows the Medallion Architecture:
 
-Bronze → Silver → Gold
+**Bronze → Silver → Gold**
 
 ```mermaid
 flowchart LR
-    A["Source CSV Files<br/>Account.csv<br/>Equipment.csv"]
-    B["Bronze Layer<br/>Raw Data"]
-    C["Silver Layer<br/>Cleaned & Transformed Data"]
-    D["Gold Layer<br/>Dimension & Fact Tables"]
+    A["Source CSV Files (Account.csv, Equipment.csv)"]
+    B["Bronze Layer - Raw Data"]
+    C["Silver Layer - Cleaned and Transformed Data"]
+    D["Gold Layer - Dimension and Fact Tables"]
+    E["DIM_ACCOUNT_DETAILS"]
+    F["FACT_EQUIPMENT"]
 
     A --> B
     B --> C
     C --> D
-
-    D --> E["DIM_ACCOUNT_DETAILS"]
-    D --> F["FACT_EQUIPMENT"]
+    D --> E
+    D --> F
 ```
 
-- Bronze: Stores raw Account and Equipment data.
-- Silver: Applies data cleaning, column mapping, null handling, and data type conversion.
-- Gold: Organizes transformed data into dimension and fact tables for analytics.
-
+- **Bronze:** Stores raw Account and Equipment data.
+- **Silver:** Applies data cleaning, column mapping, null handling, and data type conversion.
+- **Gold:** Organizes transformed data into dimension and fact tables for analytics.
+  
 🛠️ Technologies Used
 
 - Microsoft Fabric
@@ -53,7 +54,7 @@ flowchart LR
 2. Created configuration tables for source objects.
 3. Ingested Account and Equipment CSV files into the Bronze layer.
 4. Transformed Bronze data into Silver tables.
-5. Prepared Gold dimension and fact table structures.
+5. Created and populated Gold dimension and fact tables.
 6. Used notebooks and pipelines to organize the data processing workflow.
 
 📊 Data Objects
@@ -63,18 +64,7 @@ Bronze| Account, Equipment
 Silver| Account, Equipment
 Gold| DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT
 
-📚 Key Learnings
-
-- Understanding Medallion Architecture.
-- Working with Lakehouse and Warehouse components.
-- Performing data transformations using PySpark.
-- Using configuration tables for metadata-driven processing.
-- Understanding data pipeline orchestration in Microsoft Fabric.
-
-👩‍💻 Author
-
-Tuba Qureshi
-linkedin.com/in/tuba-qureshi
+📸 Project Screenshots
 
 ## 📸 Project Screenshots
 
@@ -117,57 +107,24 @@ linkedin.com/in/tuba-qureshi
 
 ![Gold Equipment](screenshots/gold-equipment.png)
 
-## 🏗️ Project Architecture
+📁 Repository Structure
 
-This project follows the Medallion Architecture using Microsoft Fabric.
+logistics-data-engineering/
+│
+├── screenshots/
+│   ├── workspace-overview.png
+│   ├── notebooks-overview.png
+│   ├── pipelines-overview.png
+│   ├── bronze-account.png
+│   ├── bronze-equipment.png
+│   ├── silver-account.png
+│   ├── silver-equipment.png
+│   ├── gold-account.png
+│   └── gold-equipment.png
+│
+└── README.md
 
-```mermaid
-flowchart TD
-    A["Source CSV Files<br/>Account.csv<br/>Equipment.csv"]
-    B["Bronze Lakehouse<br/>Raw Data"]
-    C["Silver Lakehouse<br/>Cleaned & Transformed Data"]
-    D["Gold Lakehouse<br/>Business-Ready Data"]
-    E["DIM_ACCOUNT_DETAILS"]
-    F["FACT_EQUIPMENT"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    D --> F
-
-## 🔄 Project Workflow
-
-The project follows the Medallion Architecture with three data layers:
-
-### 1. Bronze Layer – Raw Data Ingestion
-- Loaded source CSV files into the Bronze Lakehouse.
-- Ingested Account and Equipment data.
-- Used Microsoft Fabric notebooks for initial data loading.
-
-### 2. Silver Layer – Data Transformation
-- Read data from the Bronze layer.
-- Applied data cleaning and transformation.
-- Handled null values and data type conversions.
-- Loaded the transformed data into Silver tables.
-
-### 3. Gold Layer – Business-Level Data
-- Read transformed data from the Silver layer.
-- Created business-ready dimension and fact tables.
-- Loaded data into:
-  - DIM_ACCOUNT_DETAILS
-  - FACT_EQUIPMENT
-
-## 📊 Project Output
-
-| Layer | Tables |
-|---|---|
-| Bronze | Account, Equipment |
-| Silver | Account, Equipment |
-| Gold | DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT |
-
-
-## 🎯 Key Learnings
+🎯 Key Learnings
 
 Through this project, I gained practical exposure to:
 
@@ -178,3 +135,14 @@ Through this project, I gained practical exposure to:
 - Creating dimension and fact tables.
 - Using Microsoft Fabric notebooks and pipelines.
 - Understanding end-to-end data engineering workflows.
+
+👩‍💻 Author
+Tuba Qureshi
+"LinkedIn Profile" (https://www.linkedin.com/in/tuba-qureshi/)
+
+
+
+
+
+
+
