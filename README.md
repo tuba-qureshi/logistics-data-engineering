@@ -118,3 +118,32 @@ linkedin.com/in/tuba-qureshi
 ![Gold Equipment](screenshots/gold-equipment.png)
 
 
+## 🔄 Project Workflow
+
+The project follows the Medallion Architecture with three data layers:
+
+### 1. Bronze Layer – Raw Data Ingestion
+- Loaded source CSV files into the Bronze Lakehouse.
+- Ingested Account and Equipment data.
+- Used Microsoft Fabric notebooks for initial data loading.
+
+### 2. Silver Layer – Data Transformation
+- Read data from the Bronze layer.
+- Applied data cleaning and transformation.
+- Handled null values and data type conversions.
+- Loaded the transformed data into Silver tables.
+
+### 3. Gold Layer – Business-Level Data
+- Read transformed data from the Silver layer.
+- Created business-ready dimension and fact tables.
+- Loaded data into:
+  - DIM_ACCOUNT_DETAILS
+  - FACT_EQUIPMENT
+
+## 📊 Project Output
+
+| Layer | Tables |
+|---|---|
+| Bronze | Account, Equipment |
+| Silver | Account, Equipment |
+| Gold | DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT |
