@@ -76,46 +76,43 @@ Gold| DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT
 Tuba Qureshi
 linkedin.com/in/tuba-qureshi
 
-📸 Project Screenshots
+## 📸 Project Screenshots
 
-1. Workspace Overview
+### 1. Workspace Overview
+![Workspace Overview](screenshots/workspace-overview.png)
 
-"Workspace Overview" (screenshots/workspace-overview.png)
+### 2. Notebooks Overview
+![Notebooks Overview](screenshots/notebooks-overview.png)
 
-2. Notebooks
+### 3. Pipelines Overview
+![Pipelines Overview](screenshots/pipelines-overview.png)
 
-"Notebooks Overview" (screenshots/notebooks-overview.png)
+### 4. Bronze Layer
 
-3. Pipelines
+**Account Table**
 
-"Pipelines Overview" (screenshots/pipelines-overview.png)
+![Bronze Account](screenshots/bronze-account.png)
 
-4. Bronze Layer
+**Equipment Table**
 
-Account Table
+![Bronze Equipment](screenshots/bronze-equipment.png)
 
-"Bronze Account" (screenshots/bronze-account.png)
+### 5. Silver Layer
 
-Equipment Table
+**Account Table**
 
-"Bronze Equipment" (screenshots/bronze-equipment.png)
+![Silver Account](screenshots/silver-account.png)
 
-5. Silver Layer
+**Equipment Table**
 
-Account Table
+![Silver Equipment](screenshots/silver-equipment.png)
 
-"Silver Account" (screenshots/silver-account.png)
+### 6. Gold Layer
 
-Equipment Table
+**Dimension Table – DIM_ACCOUNT_DETAILS**
 
-"Silver Equipment" (screenshots/silver-equipment.png)
+![Gold Dimension](screenshots/gold-dim-account-details.png)
 
-6. Gold Layer
+**Fact Table – FACT_EQUIPMENT**
 
-Dimension Table – DIM_ACCOUNT_DETAILS
-
-"Gold Dimension" (screenshots/gold-dim-account-details.png)
-
-Fact Table – FACT_EQUIPMENT
-
-"Gold Fact" (screenshots/gold-fact-equipment.png)
+![Gold Fact](screenshots/gold-fact-equipment.png)
