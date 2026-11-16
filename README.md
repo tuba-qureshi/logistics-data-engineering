@@ -75,3 +75,47 @@ Gold| DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT
 
 Tuba Qureshi
 linkedin.com/in/tuba-qureshi
+
+📸 Project Screenshots
+
+1. Workspace Overview
+
+"Workspace Overview" (screenshots/workspace-overview.png)
+
+2. Notebooks
+
+"Notebooks Overview" (screenshots/notebooks-overview.png)
+
+3. Pipelines
+
+"Pipelines Overview" (screenshots/pipelines-overview.png)
+
+4. Bronze Layer
+
+Account Table
+
+"Bronze Account" (screenshots/bronze-account.png)
+
+Equipment Table
+
+"Bronze Equipment" (screenshots/bronze-equipment.png)
+
+5. Silver Layer
+
+Account Table
+
+"Silver Account" (screenshots/silver-account.png)
+
+Equipment Table
+
+"Silver Equipment" (screenshots/silver-equipment.png)
+
+6. Gold Layer
+
+Dimension Table – DIM_ACCOUNT_DETAILS
+
+"Gold Dimension" (screenshots/gold-dim-account-details.png)
+
+Fact Table – FACT_EQUIPMENT
+
+"Gold Fact" (screenshots/gold-fact-equipment.png)
