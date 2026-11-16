@@ -72,10 +72,10 @@ Gold| DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT
 ![Workspace Overview](screenshots/workspace-overview.png)
 
 ### 2. Notebooks Overview
-![Notebooks Overview](screenshots/notebooks-overview.png)
+![Notebooks Overview](screenshots/notebook-overview.png)
 
 ### 3. Pipelines Overview
-![Pipelines Overview](screenshots/pipelines-overview.png)
+![Pipelines Overview](screenshots/pipeline-overview.png)
 
 ### 4. Bronze Layer
 
@@ -107,23 +107,38 @@ Gold| DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT
 
 ![Gold Equipment](screenshots/gold-equipment.png)
 
+## 📊 Project Output Summary
+
+| Layer | Account Records | Equipment Records |
+|---|---:|---:|
+| Bronze | 30 | 113 |
+| Silver | 30 | 113 |
+| Gold | 30 | 113 |
+
 📁 Repository Structure
 
-logistics-data-engineering/
+```text
+Logistics_Project/
 │
-├── screenshots/
-│   ├── workspace-overview.png
-│   ├── notebooks-overview.png
-│   ├── pipelines-overview.png
-│   ├── bronze-account.png
-│   ├── bronze-equipment.png
-│   ├── silver-account.png
-│   ├── silver-equipment.png
-│   ├── gold-account.png
-│   └── gold-equipment.png
+├── Lakehouses/
+│   ├── Bronze
+│   ├── Silver
+│   └── Gold
 │
-└── README.md
-
+├── Notebooks/
+│   ├── bronze_ddl
+│   ├── Load_Bronze_Initial_Full_Load
+│   ├── Bronze_To_Silver_Logistic
+│   ├── silver_ddl
+│   ├── GOLD_DDL
+│   └── Silver_To_Gold
+│
+├── Pipelines/
+│   └── Data Processing Pipelines
+│
+└── Warehouse/
+    └── DW
+```
 🎯 Key Learnings
 
 Through this project, I gained practical exposure to:
@@ -137,7 +152,9 @@ Through this project, I gained practical exposure to:
 - Understanding end-to-end data engineering workflows.
 
 👩‍💻 Author
+
 Tuba Qureshi
+
 "LinkedIn Profile" (https://www.linkedin.com/in/tuba-qureshi/)
 
 
