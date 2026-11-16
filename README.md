@@ -111,8 +111,10 @@ linkedin.com/in/tuba-qureshi
 
 **Dimension Table – DIM_ACCOUNT_DETAILS**
 
-![Gold Dimension](screenshots/gold-dim-account-details.png)
+![Gold Account](screenshots/gold-account.png)
 
 **Fact Table – FACT_EQUIPMENT**
 
-![Gold Fact](screenshots/gold-fact-equipment.png)
+![Gold Equipment](screenshots/gold-equipment.png)
+
+
