@@ -147,3 +147,16 @@ The project follows the Medallion Architecture with three data layers:
 | Bronze | Account, Equipment |
 | Silver | Account, Equipment |
 | Gold | DIM_ACCOUNT_DETAILS, FACT_EQUIPMENT |
+
+
+## 🎯 Key Learnings
+
+Through this project, I gained practical exposure to:
+
+- Implementing Medallion Architecture using Microsoft Fabric.
+- Loading raw CSV data into a Bronze Lakehouse.
+- Transforming and cleaning data using PySpark.
+- Working with Silver and Gold data layers.
+- Creating dimension and fact tables.
+- Using Microsoft Fabric notebooks and pipelines.
+- Understanding end-to-end data engineering workflows.
