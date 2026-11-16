@@ -17,6 +17,19 @@ The project follows the Medallion Architecture:
 
 Bronze → Silver → Gold
 
+flowchart LR
+    A["Source CSV Files<br/>Account.csv<br/>Equipment.csv"]
+    B["Bronze Layer<br/>Raw Data"]
+    C["Silver Layer<br/>Cleaned & Transformed Data"]
+    D["Gold Layer<br/>Dimension & Fact Tables"]
+
+    A --> B
+    B --> C
+    C --> D
+
+    D --> E["DIM_ACCOUNT_DETAILS"]
+    D --> F["FACT_EQUIPMENT"]
+
 - Bronze: Stores raw Account and Equipment data.
 - Silver: Applies data cleaning, column mapping, null handling, and data type conversion.
 - Gold: Organizes transformed data into dimension and fact tables for analytics.
